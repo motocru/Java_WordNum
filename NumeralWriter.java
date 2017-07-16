@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class NumeralWriter {
 
 	//Final values
+	/*Final values of numbers added to make code easier to read and avoid large numeral repetition in converter method*/
 	private static final long THOU = 1000L;
 	private static final long MIL = 1000000L;
 	private static final long BIL = 1000000000L;
@@ -18,7 +19,7 @@ public class NumeralWriter {
 		System.out.println("Start of File");
 		Long number = reInput();
 		System.out.println("Your number is: " + number);
-		System.out.println("Your Number converted to word format is: \t" + converter(number));
+		System.out.println("Your Number converted to word format is: \n\t" + converter(number) +"\n");
 		System.out.println("Program over");
 	}
 	

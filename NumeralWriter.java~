@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class NumeralWriter {
 
 	//Final values
+	/*Final values of numbers added to make code easier to read and avoid large numeral repetition in converter method*/
 	private static final long THOU = 1000L;
 	private static final long MIL = 1000000L;
 	private static final long BIL = 1000000000L;
@@ -18,7 +19,7 @@ public class NumeralWriter {
 		System.out.println("Start of File");
 		Long number = reInput();
 		System.out.println("Your number is: " + number);
-		System.out.println("Your Number converted to word format is: \t" + converter(number));
+		System.out.println("Your Number converted to word format is: \t" + converter(number) +"\n");
 		System.out.println("Program over");
 	}
 	
@@ -36,7 +37,8 @@ public class NumeralWriter {
 	}
 
 	/*Method converter takes in a long number and runs through different methods and recurses over itself to piece together the English word form of the number given. 
-	The method provides a way to account for negative numbers by multiplying by -1, adding "minus" to the beginning of the string and then following the method routine as normal.*/
+	The method provides a way to account for negative numbers by multiplying by -1, adding "minus" to the beginning of the string and then following the method routine as normal.
+	The method uses division and modulus in order to divide up the much much larger numbers that get used near the end of the program. Currently the number range from a possible outcome of -999999999999999 to 999999999999999*/
 	private static String converter(Long number){
 		if (number < 0) 
 			return "minus " + converter((number*-1));
