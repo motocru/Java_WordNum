@@ -1,0 +1,10 @@
+This program takes in the numerical versions of numbers and writes them into their word form
+
+Author: Kevin Urban
+Date last updated: 7/16/2017
+
+-how to use:
+   compile the program using the command:
+      javac NumeralWriter.java
+   Run the file using the command:
+      java NumeralWriter
