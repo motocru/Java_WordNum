@@ -8,3 +8,6 @@ Date last updated: 7/16/2017
       javac NumeralWriter.java
    Run the file using the command:
       java NumeralWriter
+
+-Bugs:
+   No known bugs in the program
